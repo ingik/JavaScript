@@ -103,11 +103,14 @@ console.log(`value: ${x}, type: ${typeof x}`);
 const symbol1 = Symbol('id');
 const symbol2 = Symbol('id');
 console.log(symbol1 === symbol2);
-const symbol1 = gSymbol('id');
-const symbol2 = gSymbol('id');
+const gSymbol1 = Symbol('id');
+const gSymbol2 = Symbol('id');
 console.log(gSymbol1 === gSymbol2); //true
 console.log(`value: ${symbol1.description}, type: ${typeof symbol1.description}`);
 
+
+//object, real-life object, data structure
+const ellie = {nane: 'ellie', age: 20};
 
 //5. Dynamic typing : dynamically typed language
 let text = 'hello';
@@ -119,3 +122,4 @@ text = '7' + 5;
 console.log(`value: ${text}, type: ${typeof text}`);
 text = '8' /'2';
 console.log(`value: ${text}, type: ${typeof text}`);
+//다이나믹한 형때문에 TypeScript 나옴
